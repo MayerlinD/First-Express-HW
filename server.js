@@ -22,7 +22,7 @@ app.get('/greeting/:name', (req, res) => {
 
 app.get('/tip/:total/:tipPercentage', (req, res) => {
     const ans = (parseInt(req.params.tipPercentage) / 100) * parseInt(req.params.total)
-    res.send(`<h1>Your tip amount is ${ans}</h1>`);
+    res.send(`<h1>Your tip amount is $${ans}</h1>`);
 });
 
 
